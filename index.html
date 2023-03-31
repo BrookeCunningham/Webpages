@@ -1,0 +1,58 @@
+<!----Defines document type to browser-->
+<!DOCTYPE html>
+<html lang="en">
+    <!----Header-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Register Form</title>
+</head>
+<!----What you see on the webpage-->
+<body>
+    <!--Container For All elements (Is white on webpage)-->
+  <div id="main-container">
+    <!--Main Header-->
+    <h1>Register</h1>
+    <!--Form is a container for different types of input elements-->
+    <form id="register-form">
+        <!--Section for the email section-->
+      <div class="full-box">
+        <label for="email">E-Mail</label>
+        <!--The id attribute assigns an identifier to the <input> element. 
+            The id allows JavaScript to easily access the <input> element.
+             It is also used to point to a specific id selector in a style sheet.-->
+        <input type="email" name="email" id="email" placeholder="Type your email">
+      </div>
+      <!--First Name Section-->
+      <div class="half-box spacing">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Type your name">
+      </div>
+      <div class="half-box">
+        <label for="lastname">Surname</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Type your last name">
+      </div>
+      <div class="half-box spacing">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Type your password">
+      </div>
+      <div class="half-box">
+        <label for="passwordConfirmation">Confirm Password</label>
+        <input type="password" name="passwordConfirmation" id="passwordConfirmation" placeholder="Confirm your password">
+      </div>
+      <div class="full-box">
+        <input type="checkbox" name="agreement" id="agreement">
+        <label for="agreement" id="agreement-label">I have read and agree to the <a href="#">Privacy Policy</a></label>
+      </div>
+      <div class="full-box">
+        <!--The <input type="submit"> defines a button for submitting the form data to a form-handler.
+         The form-handler is typically a file on the server with a script for processing input data.
+         The form-handler is specified in the form's action attribute.-->
+        <input type="submit" name="agreement" id="btn-submit" value="Register">
+      </div>
+    </form> 
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
